@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "movie-app",
+    "slug": "movie-app",
+    "version": "1.0.0",
+    "icon": "./assets/images/logo.png",
+    "orientation": "portrait",
+    "scheme": "appwrite-callback-68724e1700105d9aa539",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png"
+      },
+      "package": "com.anonymous.movieapp"
+    },
+    
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
